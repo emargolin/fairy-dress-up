@@ -7,63 +7,105 @@ function init()
     state.i=1;
     state.j=1;
     state.k=1;
-    
+    state.l=1;
 }
 
 var state = {
-    i : 0,
+    i:0, // 0. nextDress> +1 , 1. nextDress> +1 , 0.
     j:0,
-    k:0
+    k:0,
+    l:0
 };
+
+var dresses = ['dress-1.png', 'dress-2.png']
 
 function nextdress()
 {
     console.log("inside function nextdress");
     console.log(state.i);
 
-    var dress=document.getElementById("clothes");
+    var dress = document.getElementById("clothes");
+
+    // state.i = (state.i + 1) % length(dresses)
+    // dress.src = dresses[state.i]
 
     if(state.i===0){
-        dress.src =  'dress1.png'
-        // dress.setAttribute("class","dress1.png");
+        dress.src =  'dress-1.png'
         state.i++;
         console.log(state.i);
     }
     else
-     if(state.i===1){
-        dress.src =  'dress2.png'
-    // dress.setAttribute("class","dress2.png");
-         state.i++;
-         console.log(state.i);
+    if(state.i===1){
+        dress.src =  'dress-2.png'
+        state.i++;
+        console.log(state.i);
     }
     else
-     if(state.i===2){
-        dress.src =  'dress3.png'
-    // dress.setAttribute("class","dress3.png");
-         state.i=0;
+    if(state.i===2){
+        dress.src =  'dress-3.png'
+        state.i++;
+        console.log(state.i);
     }
-    
+    else
+    if(state.i===3){
+        dress.src = 'dress-4.png'
+        state.i=0;
+        console.log(state.i);
+    } 
 }
 
-function nextshoe()
+// TODO: bug here. 
+function nextshirt()
 {
-    console.log("inside function nextshoe");
+    console.log("inside function nextshirt");
+    console.log(state.l);
+
+    var shirt = document.getElementById("shirt");
+
+    if(state.l === 0){
+        shirt.src = ""
+        state.l++;
+        console.log(state.l);
+    }
+    else
+    if(state.l===1){
+        shirt.src = "shirt-1.png"
+        state.l = 0;
+        console.log(state.l);
+    }
+}
+
+function nextskin()
+{
+    console.log("inside function nextskin");
     console.log(state.j);
-    var shoe=document.getElementById("shoes");
+
+    var skin = document.getElementById("skin");
+
     if(state.j===0){
-        shoe.src = "shoe1.png"
+        skin.src = "skin-1.png"
         state.j++;
         console.log(state.j);
     }
     else
      if(state.j===1){
-        shoe.src = "shoe2.png"
-         state.j++;
-         console.log(state.j);
+        skin.src = "skin-2.png"
+        state.j++;
+        console.log(state.j);
+    }
+    if(state.j===2){
+        skin.src = "skin-3.png"
+        state.j++;
+        console.log(state.j);
+    }
+    if(state.j===3){
+        skin.src = "skin-4.png"
+        state.j++;
+        console.log(state.j);
     }
     else
-     if(state.j===2){
-        shoe.src = "shoe3.png"
+     if(state.j===4){
+        skin.src = "skin-5.png"
          state.j=0;
     }
     
@@ -74,28 +116,20 @@ function nexthair()
     console.log("inside function nexthair");
     
     console.log(state.k);
-    var hairf=document.getElementById("hairfront");
-    var hairb=document.getElementById("hairback");
-    hairb.setAttribute("class","hairback");
+    var hairFront = document.getElementById("hairfront");
+    var hairBack = document.getElementById("hairback");
     
     if(state.k===0){
-        hairf.src = "hairfront1.png"
-    // hairf.setAttribute("class","hairfront1");
+        hairFront.src = "hairfront-1.png"
+        hairBack.src = "hairback-1.png"
         state.k++;
         console.log(state.k);
     }
     else
      if(state.k===1){
-        hairf.src = "hairfront2.png"
-    // hairf.setAttribute("class","hairfront2");
-         state.k++;
-         console.log(state.k);
+        hairFront.src = "gingerhairfront.png"
+        hairBack.src = "gingerhairback.png"
+        state.k = 0;
+        console.log(state.k);
     }
-    else
-     if(state.k===2){
-        hairf.src = "hairfront3.png"
-    // hairf.setAttribute("class","hairfront3");
-         state.k=0;
-    }
-    
 }
