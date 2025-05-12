@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    background-color: #e5cce6;
 	line-height: 1;
 }
 ol, ul {
@@ -48,28 +55,29 @@ table {
 }
 
 h1 {
-    display: block;
+    /* display: block; */
     font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+    font-family: "Irish Grover", system-ui;
+
+    position: relative;
+    left: 100px;
+    top: 25px;
+    /* font-weight: bold; */
   }
 
 #container {
-    position: absolute;
-    margin:auto;
+    position: relative;
+    margin: auto;
     width: 755px;
-    height :987px;
-   background-color: aqua;
+    height: 800px;
+    background-color: aqua;
 }
 
 #background {
-    position:absolute;
-    width:555px;
-    height:987px;
-    left:100px;
+    position: absolute;
+    width: 449px;
+    height: 800px;
+    left: 100px;
     right: 100px;
     background-color: rebeccapurple;
     background-image: url("../img/resized_background.png");
@@ -77,122 +85,138 @@ h1 {
 
 #hairback {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
 }
 
-.hairback{
+.hairback {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url("../img/hairback.png");
 }
 
 #man{
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url("../img/fairy-body.png");
 }
 
 #skin {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url("../img/skin-1.png");
 }
 
-#shoes{
-     position:absolute;
-    width:555px;
-    height:987px;
+#shoes {
+    position:absolute;
+    width:449px;
+    height:800px;
 }
 
-.shoe1{
-     position:absolute;
-    width:555px;
-    height:987px;
+.shoe1 {
+    position:absolute;
+    width:449px;
+    height:800px;
     background-image: url(../img/shoe1.png);
 }
 
-.shoe2{
+.shoe2 {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/shoe2.png);
 }
 
-.shoe3{
+.shoe3 {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/shoe3.png);
 }
 
-#clothes{
+#clothes {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
 }
 
 .dress1 { 
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/dress1.png);
 }
 
 .dress2 {
-    
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/dress2.png);
 }
 
 .dress3 {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/dress3.png);
 }
 
 #shirt{
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
 }
-
 
 #hairfront {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
 }
 
 .hairfront1 {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/hairfront1.png);
 }
 
 .hairfront2 {
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/hairfront2.png);
 }
 
 .hairfront3{
-    
     position:absolute;
-    width:555px;
-    height:987px;
+    width:449px;
+    height:800px;
     background-image: url(../img/hairfront3.png);
 }
 
-#nexthair{
+.next-button {
+    font-family: "Irish Grover", system-ui;
+    font-size: 21px;
+    padding: 1vh 2vw;
+    border: 2px solid #976499;
+    background-color: #c9aaca;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 3vh;
+}
+
+.next-button:hover {
+    background-color: #bf86c1;
+}
+
+.next-button:active {
+    background-color: #976499;
+}
+
+#nexthair {
     position:absolute;
     right:50px;
     top:100px;

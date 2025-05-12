@@ -2,27 +2,27 @@
    <head> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     </head>
     <title>Dress Up Game</title>
 <body>
-    <h1>Fairy Dress Up</h1>
-    <div>
-        <button type="button" class="btn btn-secondary" id="nexthair" onclick="nexthair()">Change Hair</button>
-        <button type="button" class="btn btn-secondary" id="nextdress" onclick="nextdress()">Change Dress</button>
-        <button type="button" class="btn btn-secondary" id="nextshirt" onclick="nextshirt()">Change Shirt</button>
-        <button type="button" class="btn btn-secondary" id="nextskin" onclick="nextskin()">Change Skin</button>
-        <!-- <input type="button" value="Change Hair" id="nexthair" onclick="nexthair()"> -->
-        <!-- <input type="button" value="Change Dress" id="nextdress" onclick="nextdress()"> -->
-        <!-- <input type="button" value="Change Shirt" id="nextshirt" onclick="nextshirt()"> -->
-        <!-- <input type="button" value="Change Skin" id="nextskin" onclick="nextskin()"> -->
-    </div>
     <div class="container">
-        <img id= 'skin' src='skin-1.png'/>
+        <h1>fairy dress up</h1>
+        <img id= 'skin' src='skins/skin-1.png'/>
         <img id= 'man' src='fairy-body.png'/>
-        <img id= 'hairback' src='hairback-1.png'/>
-        <img id= 'clothes' src='dress-1.png'/>
-        <img id= 'shirt' src=''/>
-        <img id= 'hairfront' src='hairfront-1.png'/>
+        <img id= 'hairback' src='hair/hairback-1.png'/>
+        <img id= 'clothes' src='dresses/dress-1.png'/>
+        <img id= 'shirt' src='shirt-1.png'/>
+        <img id= 'hairfront' src='hair/hairfront-1.png'/>
+    </div>
+    
+    <div>
+        <button type="button" class="next-button" id="nexthair" onclick="nexthair()">change hair</button>
+        <button type="button" class="next-button" id="nextdress" onclick="nextdress()">change dress</button>
+        <button type="button" class="next-button" id="nextshirt" onclick="nextshirt()">change shirt</button>
+        <button type="button" class="next-button" id="nextskin" onclick="nextskin()">change skin</button>
     </div>
 
     <script src="code.js"></script>
